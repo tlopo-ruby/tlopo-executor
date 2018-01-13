@@ -1,7 +1,7 @@
 # tlopo-retry
 [![Gem Version](https://badge.fury.io/rb/tlopo-executor.svg)](http://badge.fury.io/rb/tlopo-executor)
 [![Build Status](https://travis-ci.org/tlopo-ruby/tlopo-executor.svg?branch=master)](https://travis-ci.org/tlopo-ruby/tlopo-executor)
-[![Code Climate](http://img.shields.io/codeclimate/github/tlopo-ruby/tlopo-executor.svg)](https://codeclimate.com/github/tlopo-ruby/tlopo-executor)
+[![Code Climate](https://codeclimate.com/github/tlopo-ruby/tlopo-executor/badges/gpa.svg)](https://codeclimate.com/github/tlopo-ruby/tlopo-executor)
 [![Dependency Status](https://gemnasium.com/tlopo-ruby/tlopo-executor.svg)](https://gemnasium.com/tlopo-ruby/tlopo-executor)
 
 A simple Executor service aka Threadpool executor
