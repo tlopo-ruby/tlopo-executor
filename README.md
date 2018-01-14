@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/tlopo-ruby/tlopo-executor.svg?branch=master)](https://travis-ci.org/tlopo-ruby/tlopo-executor)
 [![Code Climate](https://codeclimate.com/github/tlopo-ruby/tlopo-executor/badges/gpa.svg)](https://codeclimate.com/github/tlopo-ruby/tlopo-executor)
 [![Dependency Status](https://gemnasium.com/tlopo-ruby/tlopo-executor.svg)](https://gemnasium.com/tlopo-ruby/tlopo-executor)
+[![Coverage Status](https://coveralls.io/repos/github/tlopo-ruby/tlopo-executor/badge.svg?branch=master)](https://coveralls.io/github/tlopo-ruby/tlopo-executor?branch=master)
 
 A simple Executor service aka Threadpool executor
 
