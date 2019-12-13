@@ -9,7 +9,7 @@ metadata:
     some-label: some-label-value
 spec:
   containers:
-  - name: ruby-2.5
+  - name: rubyci
     image: ruby:2.5
     command:
     - cat
@@ -18,9 +18,9 @@ spec:
     }
   }
   stages {
-    stage('Run maven') {
+    stage('Run tests') {
       steps {
-        container('maven') {
+        container('rubyci') {
           sh 'bundle install && rake test'
         }
       }
