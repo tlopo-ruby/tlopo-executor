@@ -29,7 +29,7 @@ gem install tlopo-executor
 
 ## Usage
 
-Simple retry usage 
+Simple usage 
 
 ```ruby
 require 'tlopo/executor'
