@@ -35,6 +35,16 @@ module Tlopo
       sleep(1)
       assert_equal(size * 2, holder.count)
     end
+
+    def test_run_or_die
+      exec = Tlopo::Executor.new(5)
+      error_msg = 'My Error'
+      exec.schedule(proc { raise error_msg })
+      e = assert_raises RuntimeError do 
+        exec.run_or_die
+      end
+      assert_match /Found error/, e.message
+    end
   end
 
   class Holder
