@@ -1,6 +1,8 @@
 require 'tlopo/executor/version'
+require 'logger'
 
 module Tlopo
+  LOGGER ||= Logger.new $stderr
   # Simple Executor service aka threadpool executor
   class Executor
     def initialize(size = 10)
@@ -23,6 +25,12 @@ module Tlopo
       end
       @running_threads.each(&:join)
       self
+    end
+
+    def run_or_die
+      run
+      errors.each {|e| LOGGER.error e }
+      raise 'Found error(s)' unless errors.empty?
     end
 
     def success?

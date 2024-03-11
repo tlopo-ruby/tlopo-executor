@@ -1,10 +1,8 @@
 require 'bundler/gem_tasks'
 require 'rake/testtask'
 require 'rubocop/rake_task'
-require 'coveralls/rake/task'
 
 task default: %i[test rubocop]
-task test_with_coveralls: [:default, 'coveralls:push']
 
 Rake::TestTask.new(:test) do |t|
   t.libs << 'test'
@@ -13,4 +11,3 @@ Rake::TestTask.new(:test) do |t|
 end
 
 RuboCop::RakeTask.new
-Coveralls::RakeTask.new
